@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    color: $text;
+    background-color: $background;
+}
+
+a {
+    color: $text;
+}
+
+.container {
+    width: 100%;
+    max-width: 1164px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-weight: 600;
+
+    &.btn-primary {
+        background: $primary-color;
+        border-color: $primary-color;
+        font-size: 15px;
+        padding: 13px 25px;
+        border-radius: 90px;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .item {
+//     color: purple;
+//     &.color-red{
+//         color: red;
+//     }
+// }
+
+// .color-red {
+//     color: red;
+//     &.item{
+//         color: yellow;
+//     }
+// }
+
+// .item {
+//     color: purple;
+// }
+
+// .color-red {
+//     color: red;
+// }
+
+// .color-red.item {
+//     color: yellow;
+// }
+
+// .item.color-red {
+//     color: red;
+// }
