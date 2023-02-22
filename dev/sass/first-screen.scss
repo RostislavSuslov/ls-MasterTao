@@ -1,3 +1,28 @@
-h1 {
-    color: blue;
+.banner-item {
+    padding: 170px 0 60px;
+    width: 1287px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    .container {
+        min-height: 470px;
+    }
+}
+
+.banner-item__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 126%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    max-width: 463px;
+}
+
+.banner-item__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 135.5%;
+    margin-bottom: 37px;
+    max-width: 345px;
 }
