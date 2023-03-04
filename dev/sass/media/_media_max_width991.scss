@@ -1,7 +1,7 @@
 @media screen and (max-width: 991px) {
     header {
         padding: 17px 0 15px;
- 
+
         .header-logo {
             max-width: 126px;
         }
@@ -12,9 +12,9 @@
         }
 
         .nav-item {
-          
+
             &:last-child {
-                
+
                 .nav-link {
                     margin-bottom: 0;
                 }
@@ -34,6 +34,7 @@
         flex-direction: column;
         background-color: $accest-background;
         margin: 15px -12px 0;
+
         .btn {
             margin-bottom: 60px;
             padding: 22px 25px;
@@ -41,5 +42,100 @@
         }
     }
 
+    .container-fluid {
+        padding: 0;
+    }
 
+    .banner {
+        .banner-item {
+            display: flex;
+        }
+    }
+
+    .banner-item {
+        border-radius: 0;
+        padding: 20px 0;
+        min-height: calc(100vh - 72px);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #00000005;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 126%;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: -15vh;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 135.5%;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .container {
+            padding: 0 40px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            .btn {
+                max-width: 295px;
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .slick-dots {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        top: calc(100% - 57px);
+        left: 50%;
+        transform: translateX(-50%);
+
+        li {
+            margin: 0 13px;
+            list-style: none;
+            font-size: 8px;
+            line-height: 8px;
+
+            &.slick-active,
+            &:hover {
+                button {
+                    background: #fff;
+                }
+            }
+
+            &.slick-active {
+                button {
+
+                    width: 48px;
+                }
+            }
+        }
+
+        button {
+            border: 2px solid #fff;
+            background: transparent;
+            font-size: 0;
+            height: 8px;
+            width: 8px;
+            border-radius: 10px;
+            transition: .3s;
+        }
+    }
 }

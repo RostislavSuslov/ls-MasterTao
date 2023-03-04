@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: #fff;
+    background-color: $primary-color;
+}
+
 body {
     font-family: $font-primary;
     color: $text;
@@ -40,31 +45,197 @@ a {
             border-color: $secondary-color;
         }
     }
+
     &.btn-large {
         padding: 22px 33px;
     }
 }
- 
+
 .container-fluid {
     padding: 0 50px;
     max-width: 1920px;
 }
 
+.template-title,
+.template-subtitle {
+    line-height: 125%;
+
+    text-align: center;
+}
+
+.template-title {
+    position: relative;
+    margin-bottom: $title-margin + 19px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -19px;
+        height: 2px;
+        width: 85px;
+        background-color: $primary-color;
+        display: block;
+    }
+
+    &.after-green {
+        &:after {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.template-title-left {
+    @extend.template-title;
+    text-align: left;
+    margin-bottom: $title-margin;
+
+    &:after {
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    &.after-green {
+        &:after {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.after-inline {
+    >&:after {
+        display: none;
+    }
+
+    h2 {
+        &:after {
+            content: "";
+            height: 2px;
+            width: 85px;
+            background-color: $primary-color;
+            display: inline-block;
+            margin: 0 0 10px 20px;
+        }
+    }
+
+    &.after-green {
+        h2 {
+            &:after {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.btn-box {
+    margin-bottom: 14px;
+}
+
+
+label {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 126%;
+    margin-bottom: 6px;
+}
+
+input {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 18px 20px;
+    font-size: 15px;
+    line-height: 126%;
+    border: 1px solid #fff;
+    transition: 0.3s;
+    width: 100%;
+
+    &::placeholder {
+        transition: .3s;
+        color: #CBCBCB;
+    }
+
+    &:focus {
+
+        box-shadow: #cecee9 0px 0px 9px 0px;
+
+        &::placeholder {
+            color: transparent;
+        }
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+
+[type="checkbox"] {
+    position: relative;
+    width: 0;
+    height: 0;
+ 
+    &::before {
+        content: "";
+        background: #FFFFFF;
+        border: 1px solid $background;
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -17px;
+    }
+
+
+    + label {
+        margin: 0 0 0 30px;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            opacity: 0;
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+            display: block;
+            background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.31726 10.3171C4.07378 10.3171 3.83005 10.2243 3.64431 10.0384L0.278815 6.67291C-0.0929384 6.30116 -0.0929384 5.69853 0.278815 5.32677C0.650569 4.95502 1.2532 4.95502 1.62495 5.32677L4.31726 8.01907L10.3751 1.96139C10.7468 1.58975 11.3496 1.58964 11.7211 1.96139C12.0929 2.33314 12.0929 2.93591 11.7211 3.30753L4.99034 10.0384C4.80446 10.2242 4.56084 10.3171 4.31726 10.3171Z' fill='%23282B38'/%3E%3C/svg%3E") center no-repeat;
+            position: absolute;
+            left: -33px;
+            top: -3px;
+        }
+    }
+
+    &:checked {
+        + label {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.button-group {
+    padding-top: 19px;
+}
 
 
 

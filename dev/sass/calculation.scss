@@ -1,0 +1,64 @@
+.calculation {
+    padding: $section-padding;
+    @extend .container;
+
+    .template-title-left {
+        max-width: 626px;
+    }
+}
+
+.form-calculation {
+    background: #363A4D;
+    border-radius: 20px;
+    max-width: 626px;
+    padding: 50px 50px 60px;
+
+    .row {
+        margin: 0 -15px;
+    }
+
+    .col-md-6 {
+        padding: 0 15px;
+
+        &.button-group {
+            padding-top: 19px;
+        }
+    }
+}
+
+
+
+/*style type="file"*/
+.file-row {
+    display: flex;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.input-file {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.label-file {
+    font-size: 15px;
+    line-height: 126%;
+    text-align: center;
+    width: 100%;
+    border: 1px dashed #ffffff42;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 11px 12px;
+    margin: 12px 0 26px;
+}
+
+#file-name {
+    margin-top: 14px;
+}
