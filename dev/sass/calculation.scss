@@ -11,6 +11,7 @@
     background: #363A4D;
     border-radius: 20px;
     max-width: 626px;
+
     padding: 50px 50px 60px;
 
     .row {
@@ -61,4 +62,18 @@
 
 #file-name {
     margin-top: 14px;
+}
+
+
+.calculation-row {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    .img-box {
+        position: absolute;
+        bottom: -100px;
+        right: -56px;
+        width: Min(40vw,625px);
+    
+   }
 }

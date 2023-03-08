@@ -1,2 +1,19 @@
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1299px) {
+    .calculation {
+        overflow: hidden;
+    }
+    .calculation-row .img-box {
+       
+        right: 56px;
+      
+    }
 }
+
+
+@media screen and (max-width: 1199px) {
+    .calculation-row .img-box {
+        right: -39px;
+    }
+}
+
+

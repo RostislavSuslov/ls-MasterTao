@@ -237,6 +237,11 @@ input {
     padding-top: 19px;
 }
 
+ section > .container-fluid:not(.banner) {   
+     background: #363A4D;
+     border-radius: 20px;
+     padding: 90px 50px 110px;
+ }
 
 
 
@@ -248,45 +253,3 @@ input {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .item {
-//     color: purple;
-//     &.color-red{
-//         color: red;
-//     }
-// }
-
-// .color-red {
-//     color: red;
-//     &.item{
-//         color: yellow;
-//     }
-// }
-
-// .item {
-//     color: purple;
-// }
-
-// .color-red {
-//     color: red;
-// }
-
-// .color-red.item {
-//     color: yellow;
-// }
-
-// .item.color-red {
-//     color: red;
-// }
