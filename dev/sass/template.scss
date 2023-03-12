@@ -59,7 +59,6 @@ a {
 .template-title,
 .template-subtitle {
     line-height: 125%;
-
     text-align: center;
 }
 
@@ -237,11 +236,14 @@ input {
     padding-top: 19px;
 }
 
- section > .container-fluid:not(.banner) {   
-     background: #363A4D;
-     border-radius: 20px;
-     padding: 90px 50px 110px;
- }
+ section {
+    padding: $section-padding;
+     > .container-fluid:not(.banner) {   
+         background: #363A4D;
+         border-radius: 20px;
+         padding: 90px 50px 110px;
+     }
+ } 
 
 
 

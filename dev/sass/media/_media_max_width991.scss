@@ -56,6 +56,7 @@
         border-radius: 0;
         padding: 20px 0;
         min-height: calc(100vh - 72px);
+
         &::before {
             content: "";
             position: absolute;
@@ -65,6 +66,7 @@
             width: 100%;
             background-color: #00000005;
         }
+
         &__title {
             font-size: 32px;
             line-height: 126%;
@@ -88,6 +90,7 @@
             align-items: center;
             justify-content: center;
             z-index: 1;
+
             .btn {
                 max-width: 295px;
                 width: 100%;
@@ -138,7 +141,7 @@
             transition: .3s;
         }
     }
-    
+
     .form-calculation {
         padding: 52px 30px 34px;
     }
@@ -149,5 +152,44 @@
 
     .calculation-row .img-box {
         display: none;
+    }
+
+    .advantage-img {
+        margin: 10px auto 22px;
+    }
+
+
+    .template-title,
+    .template-subtitle,
+    .template-title-left {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: $title-margin - 12px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 124.5%;
+        }
+    }
+
+    .after-inline {
+
+        h2:after {
+            margin: 0 0 10px 20px;
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: -19px;
+            height: 2px;
+            width: 85px;
+            display: block;
+        }
+    }
+
+    section > .container-fluid:not(.banner) {
+        background: #363A4D;
+        border-radius: 0px;
+        padding: 55px 20px 60px;
     }
 }
