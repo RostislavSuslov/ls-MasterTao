@@ -154,10 +154,18 @@
         display: none;
     }
 
-    .advantage-img {
-        margin: 10px auto 22px;
+    .advantage {
+        &-img {
+            margin: 10px auto 22px;
+        }
+    
+        .slick-dots {
+            margin: 48px 0 60px;
+            position: static;
+            transform: none;
+        }
     }
-
+   
 
     .template-title,
     .template-subtitle,
