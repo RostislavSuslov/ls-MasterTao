@@ -100,47 +100,7 @@
 
 
 
-    .slick-dots {
-        display: flex;
-        padding: 0;
-        justify-content: center;
-        margin: 0;
-        position: absolute;
-        top: calc(100% - 57px);
-        left: 50%;
-        transform: translateX(-50%);
-
-        li {
-            margin: 0 13px;
-            list-style: none;
-            font-size: 8px;
-            line-height: 8px;
-
-            &.slick-active,
-            &:hover {
-                button {
-                    background: #fff;
-                }
-            }
-
-            &.slick-active {
-                button {
-
-                    width: 48px;
-                }
-            }
-        }
-
-        button {
-            border: 2px solid #fff;
-            background: transparent;
-            font-size: 0;
-            height: 8px;
-            width: 8px;
-            border-radius: 10px;
-            transition: .3s;
-        }
-    }
+   
 
     .form-calculation {
         padding: 52px 30px 34px;
@@ -196,7 +156,6 @@
     }
 
     section > .container-fluid:not(.banner) {
-        background: #363A4D;
         border-radius: 0px;
         padding: 55px 20px 60px;
     }

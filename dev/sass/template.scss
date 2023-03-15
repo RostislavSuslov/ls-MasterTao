@@ -28,13 +28,13 @@ a {
 
 .btn {
     font-weight: 600;
+    font-size: 15px;
+    padding: 13px 25px;
+    border-radius: 90px;
 
     &.btn-primary {
         background: $primary-color;
         border-color: $primary-color;
-        font-size: 15px;
-        padding: 13px 25px;
-        border-radius: 90px;
 
         &:focus {
             box-shadow: none;
@@ -48,6 +48,15 @@ a {
 
     &.btn-large {
         padding: 22px 33px;
+    }
+
+    &.btn-secondary {
+        color: #fff;
+        border-color: $primary-color;
+        background-color: transparent;
+        &:hover  {
+            @extend .btn-primary;
+        }
     }
 }
 
@@ -246,12 +255,54 @@ input {
  } 
 
 
+ .slick-dots {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: calc(100% - 57px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+        margin: 0 13px;
+        list-style: none;
+        font-size: 8px;
+        line-height: 8px;
+
+        &.slick-active,
+        &:hover {
+            button {
+                background: #fff;
+            }
+        }
+
+        &.slick-active {
+            button {
+
+                width: 48px;
+            }
+        }
+    }
+
+    button {
+        border: 2px solid #fff;
+        background: transparent;
+        font-size: 0;
+        height: 8px;
+        width: 8px;
+        border-radius: 10px;
+        transition: .3s;
+    }
+}
 
 
 
 
 
-
-
+.advantages, .dilivery {
+    margin-bottom: 100px;
+}
 
 

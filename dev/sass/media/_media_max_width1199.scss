@@ -1,3 +1,9 @@
+@media screen and (max-width: 1539px) {
+.slider-template {
+    max-width: 931px;
+}
+}
+
 @media screen and (max-width: 1299px) {
     .calculation {
         overflow: hidden;
@@ -13,6 +19,12 @@
 @media screen and (max-width: 1199px) {
     .calculation-row .img-box {
         right: -39px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .slider-template {
+        max-width: 542px;
     }
 }
 

@@ -19,5 +19,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "sass/first-screen";
 @import "sass/calculation";
 @import "sass/advantages";
+@import "sass/dilivery";
+@import "sass/services";
+
 @import "sass/footer";
 @import "sass/media/media";
+
+
+.test {
+    width: 450px;
+    height: 450px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    &:nth-child(2) {
+        border-radius: 50%;
+        background-color: aqua;
+    }
+    &:last-child {
+        width: 750px;
+        background-color: chartreuse;
+    }
+}
